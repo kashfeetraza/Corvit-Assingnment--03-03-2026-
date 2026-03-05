@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmacy Admin Dashboard</title>
+
+<style>
+
+/* Reset basic spacing */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox layout */
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Sidebar (narrow) */
+.sidebar{
+    flex:1;
+    background:#f4f4f4;
+    padding:20px;
+}
+
+/* Main content (larger area) */
+.content{
+    flex:4;
+    padding:20px;
+}
+
+/* Sidebar navigation */
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin:10px 0;
+}
+
+/* Default sidebar links (grey) */
+.sidebar a{
+    text-decoration:none;
+    color:grey;
+    font-size:16px;
+}
+
+/* Active link overrides default grey */
+.sidebar a.active{
+    color:blue;
+    font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>Pharmacy Admin</h2>
+
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Medicines</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Customers</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome to the pharmacy management system. Use the sidebar to navigate.</p>
+    </main>
+
+</div>
+
+</body>
+</html>
